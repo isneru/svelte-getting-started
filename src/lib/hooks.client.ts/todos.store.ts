@@ -19,3 +19,11 @@ export function addTodo() {
 export function deleteTodo(todoId: string) {
 	todos.update(todos => todos.filter(todo => todo.id !== todoId))
 }
+
+export function toggleTodo(todoId: string) {
+	todos.update(todos =>
+		todos.map(todo => {
+			return todo.id === todoId ? { ...todo, done: !todo.done } : todo
+		})
+	)
+}

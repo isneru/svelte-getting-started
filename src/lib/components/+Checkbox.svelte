@@ -1,20 +1,12 @@
 <script lang="ts">
-	import { todos, type Todo } from "$lib/hooks.client.ts"
+	import { toggleTodo, type Todo } from "$lib/hooks.client.ts"
 
 	export let todo: Todo
-
-	function toggleTodo() {
-		todos.update(todos => {
-			const index = todos.findIndex(t => t.id === todo.id)
-			todos[index].done = !todos[index].done
-			return todos
-		})
-	}
 </script>
 
 <button
 	disabled={!todo.text}
-	on:click={toggleTodo}
+	on:click={() => toggleTodo(todo.id)}
 	class:checked={todo.done}
 	class:unchecked={!todo.done}>
 	{#if todo.done}
