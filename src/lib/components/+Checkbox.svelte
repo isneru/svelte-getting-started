@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Check from "$lib/components/icons/+Check.svelte"
-	import { toggleTodo, type Todo } from "$lib/hooks.client.ts"
+	import { toggleTodo } from "$lib/stores/todos"
+	import type { Todo } from "$lib/types/todos"
 
 	export let todo: Todo
 </script>
