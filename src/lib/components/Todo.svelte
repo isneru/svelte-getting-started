@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Checkbox from "$lib/components/+Checkbox.svelte"
+	import Checkbox from "$lib/components/Checkbox.svelte"
 	import { deleteTodo, updateTodoText } from "$lib/stores/todos"
 	import type { Todo } from "$lib/types/todos"
 

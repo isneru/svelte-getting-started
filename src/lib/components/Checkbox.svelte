@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Check from "$lib/components/icons/+Check.svelte"
+	import Check from "$lib/components/icons/Check.svelte"
 	import { toggleTodo } from "$lib/stores/todos"
 	import type { Todo } from "$lib/types/todos"
 
