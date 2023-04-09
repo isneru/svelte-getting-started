@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Checkbox from "$lib/components/Checkbox.svelte"
-	import { deleteTodo, updateTodoText } from "$lib/stores/todos"
-	import type { Todo } from "$lib/types/todos"
+import Checkbox from "$lib/components/Checkbox.svelte"
+import { deleteTodo, updateTodoText } from "$lib/stores/todos"
+import type { Todo } from "$lib/types/todos"
 
-	export let todo: Todo
+export let todo: Todo
 </script>
 
 <div class="flex items-center gap-4">
