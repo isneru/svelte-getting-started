@@ -6,5 +6,7 @@
 	<a
 		href="https://github.com/isneru/svelte-getting-started"
 		target="_blank"
-		rel="noopener noreferrer"><Github size={24} /></a>
+		rel="noopener noreferrer"
+		><Github size={24} />
+	</a>
 </footer>
